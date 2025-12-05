@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>monblanproject</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style/css/datepicker/datepicker.min.css">
+        <link rel="stylesheet" href="style/css/main.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container flex">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="Logo">
+                </div>
+
+                <div class="content">
+                    <div class="headline flex">
+                        <h1>monblanproject</h1>
+                        <div class="date flex">
+                            <p>Start on  17-02-2016</p>
+                        </div>
+                    </div>
+
+                    <div class="info-panel flex">
+                        <p class="posts"><span class="strong">870</span> posts</p>
+                        <p class="followers"><span class="strong">11,787</span> followers</p>
+                        <p class="following"><span class="strong">112</span> following</p>
+                    </div>
+
+                    <div class="filter-date-panel flex">
+                        <p>Date</p>
+
+                        <div class="date-box flex">
+                            <input type="text" name="date-from" id="date-from" placeholder="from" autocomplete="off" readonly>
+                            <div data-input="date-from" class="close"></div>
+                            <label for="date-from"></label>
+                        </div>
+
+                        <div class="date-box flex">
+                            <input type="text" name="date-from" id="date-to" placeholder="to" autocomplete="off" readonly>
+                            <div data-input="date-to" class="close"></div>
+                            <label for="date-to"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="post-list">
+            <div class="container">
+                <div class="navigation flex">
+                    <button class="active" id="gridViewBtn" title="Режим сетки">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </button>
+
+                    <button class="flex" id="listViewBtn" title="Режим списка">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                            <rect width="6" height="6" fill="#C8C7C7"/>
+                            <rect y="8" width="6" height="6" fill="#C8C7C7"/>
+                            <rect y="16" width="6" height="6" fill="#C8C7C7"/>
+                            <rect x="9" y="10" width="15" height="2" fill="#C8C7C7"/>
+                            <rect x="9" y="18" width="15" height="2" fill="#C8C7C7"/>
+                            <rect x="9" y="2" width="15" height="2" fill="#C8C7C7"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="content-area" class="content-wrapper list-view"></div>
+            </div>
+        </section>
+
+        <script src="js/datepicker/datepicker.min.js"></script>
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
